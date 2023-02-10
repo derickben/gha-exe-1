@@ -4,7 +4,7 @@ on: issues
 
 jobs:
   Output_event_details:
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
     steps:
       - name: Output details
         run: echo "${{ toJSON(github.event) }}"
