@@ -3,7 +3,7 @@ name: First workflow
 on: push
 
 jobs:
-  Lint_Test_and Deploy:
+  Lint_Test_and_Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
