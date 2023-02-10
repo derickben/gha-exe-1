@@ -1,8 +1,9 @@
 name: First workflow
 
 on:
-  branches:
-    - main
+  push:
+    branches:
+      - main
 
 jobs:
   Test:
