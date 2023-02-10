@@ -6,6 +6,10 @@ jobs:
   Output_event_details:
     runs-on: ubuntu latest
     steps:
+      - name: Get code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
       - name: Output details
         run: echo ${{ toJSON(github.event) }}
       - run: echo ${{ github.event_name }}
