@@ -1,0 +1,20 @@
+name: First workflow
+
+on: push
+
+jobs:
+  Lint Test and Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: ci
+      - name: Run Lint
+        run: npm run lint
+      - name: Run Test
+        run: npm run test
+      - name: Run Build
+        run: npm run build
+      - name: Deploy Code
+        run: echo "Deployed succesfully"
