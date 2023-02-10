@@ -3,7 +3,7 @@ name: Second Workflow
 on: issues
 
 jobs:
-  Output event details:
+  Output_event_details:
     runs-on: ubuntu latest
     steps:
       - name: Output details
