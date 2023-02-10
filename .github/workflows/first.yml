@@ -9,7 +9,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v2
       - name: Install Dependencies
-        run: ci
+        run: npm ci
       - name: Run Lint
         run: npm run lint
       - name: Run Test
